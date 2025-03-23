@@ -14,7 +14,7 @@ apt install -y certbot python3-certbot-apache
 ### **Step 2: Run Certbot to Obtain and Install SSL**
 Let Certbot do the work:
 ```bash
-certbot --apache -d voip.vfree.one
+certbot --apache -d yourdomain.com
 ```
 - It will:
   - Verify your domain.
@@ -26,7 +26,7 @@ certbot --apache -d voip.vfree.one
 
 ### **Step 3: Verify SSL Installation**
 Once Certbot finishes, test if your SSL certificate is working:
-- Open **https://voip.vfree.one** in your browser.
+- Open **https://yourdomain.com** in your browser.
 - Check your certificate status with:
   ```bash
   certbot certificates
